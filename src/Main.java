@@ -23,53 +23,40 @@ public class Main {
         //
         //3. Произвольный массив – тип и количество данных определите сами. Самостоятельно выберите способ создания массива: с помощью ключевого слова или сразу заполненный элементами.
         System.out.println("Задание 1.");
-        int [] three = new int[5];
+        int[] three = new int[3];
         three[1] = 1;
         three[2] = 2;
-        three[3] = 3;
-        three[4] = 4;
-        //int Zd = three[3];
-        //System.out.println(Zd);
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 3; i++) {
             System.out.println(three[i]);
-            
+
         }
-        double [] drob = new double[4];
+        double[] drob = {0, 1.57, 7.654, 9.986};
         drob[1] = 1.57;
         drob[2] = 7.654;
         drob[3] = 9.986;
         for (int i = 0; i < drob.length; i++) {
             System.out.println(drob[i]);
         }
-        int [] OP = new int[2];
+        int[] OP = new int[2];
+        OP[1] = 2;
         OP[0] = 3;
         System.out.println(OP[0]);
+        System.out.println(OP[1]);
         System.out.println("Задание №2");
-        {
-            System.out.println(three[0] + ", " + three[1] + ", " + three[2] + ", " + three[3]);
-        }
-        {
-            System.out.println(drob[0] + ", " + drob[1] + ", " + drob[2] + ", " + drob[3]);
-        }
-        {
-            System.out.println(OP[0] + ", " + OP[1]);
-        }
+        System.out.println(three[0] + ", " + three[1] + ", " + three[2]);
+        System.out.println(drob[0] + ", " + drob[1] + ", " + drob[2] + ", " + drob[3]);
+        System.out.println(OP[0] + ", " + OP[1]);
         System.out.println("Задание №3");
-        {
-            System.out.println(three[3] + ", " + three[2] + ", " + three[1] + ", " + three[0]);
-        }
-        {
-            System.out.println(drob[3] + ", " + drob[2] + ", " + drob[1] + ", " + drob[0]);
-        }
-        {
-            System.out.println(OP[1] + ", " + OP[0]);
-        }
+        System.out.println(three[2] + ", " + three[1] + ", " + three[0]);
+        System.out.println(drob[3] + ", " + drob[2] + ", " + drob[1] + ", " + drob[0]);
+        System.out.println(OP[1] + ", " + OP[0]);
         System.out.println("Задание №4");
-        int chet = 1;
-        for (int i = 0; i < 4; i++) {
-            if (i % 2 != 0){
-                i++;
-                System.out.println(three[i]);}
+        for (int i = 0; i < three.length; i++) {
+            if (three[i] % 2 == 0) {
+                System.out.print(three[i] + " ");
+            } else {
+                three[i] = three[i] + 1;
+            }
         }
 
     }
