@@ -28,7 +28,6 @@ public class Main {
         three[2] = 2;
         for (int i = 0; i < 3; i++) {
             System.out.println(three[i]);
-
         }
         double[] drob = {0, 1.57, 7.654, 9.986};
         drob[1] = 1.57;
